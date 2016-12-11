@@ -1,0 +1,5 @@
+LIBRARY	"xlink"
+EXPORTS
+	GetPluginInfo
+	GetServiceInfo
+	GetService

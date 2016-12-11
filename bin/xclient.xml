@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<connections>
+	<!--conn name="bus" ip="127.0.0.1" port="18000"/-->
+	<conn name="access" ip="127.0.0.1" port="18001"/>
+	<!--conn name="business" ip="127.0.0.1" port="18002"/-->
+</connections>

@@ -1,0 +1,3 @@
+[13:29:34][0][xconnection][127.0.0.1:58476 connected:totalcount=[0]][f:\willenchou\x\src\plugin\xconnection\xconnection_impl.cpp:254]
+[13:29:34][0][xconnection][connect 127.0.0.1:58476 registed at access#0@0#0][f:\willenchou\x\src\plugin\xconnection\xconnection_impl.cpp:426]
+[13:30:16][0][xconnection][connect 127.0.0.1:58476 closed leftcount[1]][f:\willenchou\x\src\plugin\xconnection\xconnection_impl.cpp:343]

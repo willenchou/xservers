@@ -1,0 +1,5 @@
+LIBRARY	"xpipe"
+EXPORTS
+	GetPluginInfo
+	GetServiceInfo
+	GetService

@@ -1,0 +1,27 @@
+[14:15:21][0][xconnection][127.0.0.1:62201 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:253]
+[14:15:21][0][xconnection][connect 127.0.0.1:62201 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:425]
+[14:18:04][0][xconnection][127.0.0.1:62330 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:18:04][0][xconnection][connect 127.0.0.1:62330 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[14:32:42][0][xconnection][127.0.0.1:62863 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:32:42][0][xconnection][connect 127.0.0.1:62863 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[14:33:07][0][xconnection][connect 127.0.0.1:62863 closed][e:\x\src\plugin\xconnection\xconnection_impl.cpp:342]
+[14:33:32][0][xconnection][127.0.0.1:62897 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:33:32][0][xconnection][connect 127.0.0.1:62897 registed at ls#0@0#0_1][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[14:36:24][0][xconnection][127.0.0.1:63039 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:36:24][0][xconnection][connect 127.0.0.1:63039 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[14:36:26][0][xconnection][connect 127.0.0.1:63039 closed][e:\x\src\plugin\xconnection\xconnection_impl.cpp:342]
+[14:37:24][0][xconnection][127.0.0.1:63109 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:37:24][0][xconnection][connect 127.0.0.1:63109 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[14:47:38][0][xconnection][127.0.0.1:63561 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[14:47:38][0][xconnection][connect 127.0.0.1:63561 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+
+
+
+
+[16:01:22][0][xconnection][127.0.0.1:50849 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[16:01:22][0][xconnection][connect 127.0.0.1:50849 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[16:02:30][0][xconnection][127.0.0.1:50927 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[16:02:30][0][xconnection][connect 127.0.0.1:50927 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[16:04:40][0][xconnection][127.0.0.1:51031 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:255]
+[16:04:40][0][xconnection][connect 127.0.0.1:51031 registed at ls#0@0#0_0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:427]
+[16:04:41][0][xconnection][connect 127.0.0.1:51031 closed][e:\x\src\plugin\xconnection\xconnection_impl.cpp:342]

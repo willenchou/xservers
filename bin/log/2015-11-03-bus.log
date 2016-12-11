@@ -1,0 +1,7 @@
+[11:36:37][0][xconnection][127.0.0.1:60805 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:253]
+[11:36:37][0][xconnection][connect 127.0.0.1:60805 registed at jar#0@0#0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:425]
+[11:37:40][0][xconnection][127.0.0.1:60841 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:253]
+[11:37:40][0][xconnection][connect 127.0.0.1:60841 registed at jar#0@0#0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:425]
+[11:38:08][0][xconnection][127.0.0.1:60888 connected][e:\x\src\plugin\xconnection\xconnection_impl.cpp:253]
+[11:38:08][0][xconnection][connect 127.0.0.1:60888 registed at ls#0@0#0][e:\x\src\plugin\xconnection\xconnection_impl.cpp:425]
+[11:39:58][0][xconnection][connect 127.0.0.1:60888 closed][e:\x\src\plugin\xconnection\xconnection_impl.cpp:340]

@@ -1,0 +1,5 @@
+LIBRARY	"xbusiness"
+EXPORTS
+	GetPluginInfo
+	GetServiceInfo
+	GetService

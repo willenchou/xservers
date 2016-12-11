@@ -1,0 +1,5 @@
+LIBRARY	"xconnection"
+EXPORTS
+	GetPluginInfo
+	GetServiceInfo
+	GetService

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312"?>
+<app name="access">
+    <plugins>
+		<plugin name="xmessage"/>
+		<plugin name="xlog"/>
+		<plugin name="xconnection"/>
+		<plugin name="xpipe">
+			<pipes>
+				<pipe>xconnection;xroute</pipe>
+			</pipes>
+		</plugin>
+		<plugin name="xroute">
+			<routes>
+				<route function_id="*;" node="bus"/>
+			</routes>
+		</plugin>
+	</plugins>
+</app>

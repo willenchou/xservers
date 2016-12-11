@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xmessage">
+      <UniqueIdentifier>{c7cf28b9-97c9-44e4-8421-a816b1a97bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="xclientconn">
+      <UniqueIdentifier>{384b6e1c-c7b2-4fa9-86c5-0d6b60141dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xserverconn">
+      <UniqueIdentifier>{8dc8bb07-110a-4aad-a948-25f1197f81b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xlinkconn">
+      <UniqueIdentifier>{2c2c0ae2-14b2-4f58-b1c6-552149751c24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xmessage_test.h">
+      <Filter>xmessage</Filter>
+    </ClInclude>
+    <ClInclude Include="test_helper.h" />
+    <ClInclude Include="xclientconn_test.h">
+      <Filter>xclientconn</Filter>
+    </ClInclude>
+    <ClInclude Include="xserverconn_test.h">
+      <Filter>xserverconn</Filter>
+    </ClInclude>
+    <ClInclude Include="testservercallback.h">
+      <Filter>xserverconn</Filter>
+    </ClInclude>
+    <ClInclude Include="xlinkconn_test.h">
+      <Filter>xlinkconn</Filter>
+    </ClInclude>
+    <ClInclude Include="testclientcallback.h">
+      <Filter>xlinkconn</Filter>
+    </ClInclude>
+    <ClInclude Include="test_def.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testservercallback.cpp">
+      <Filter>xserverconn</Filter>
+    </ClCompile>
+    <ClCompile Include="testclientcallback.cpp">
+      <Filter>xlinkconn</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

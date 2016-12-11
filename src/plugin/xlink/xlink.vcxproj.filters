@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="eventloop">
+      <UniqueIdentifier>{f9400ddd-d59a-48ba-9603-b527a89f6744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{7dcd5caa-7e92-4d16-bba5-34590e6c463c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conn">
+      <UniqueIdentifier>{33e4de0a-7eef-41cf-b10f-e4916cc7f91a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multiplexing">
+      <UniqueIdentifier>{3f7c0055-692f-45df-a53b-8db582bd9161}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="event_dispatch.cpp">
+      <Filter>eventloop</Filter>
+    </ClCompile>
+    <ClCompile Include="eventthread.cpp">
+      <Filter>eventloop</Filter>
+    </ClCompile>
+    <ClCompile Include="eventthreadpool.cpp">
+      <Filter>eventloop</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="pack.cpp">
+      <Filter>message</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="channel.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="connector.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="select.cpp">
+      <Filter>multiplexing</Filter>
+    </ClCompile>
+    <ClCompile Include="acceptor.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="multiplexingfactory.cpp">
+      <Filter>multiplexing</Filter>
+    </ClCompile>
+    <ClCompile Include="linkclient.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="linkserver.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="linkfactory.cpp">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="epoll.cpp">
+      <Filter>multiplexing</Filter>
+    </ClCompile>
+    <ClCompile Include="kqueue.cpp">
+      <Filter>multiplexing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="event_dispatch.h">
+      <Filter>eventloop</Filter>
+    </ClInclude>
+    <ClInclude Include="eventthread.h">
+      <Filter>eventloop</Filter>
+    </ClInclude>
+    <ClInclude Include="eventthreadpool.h">
+      <Filter>eventloop</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="pack.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="channel.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\xlink_intf.h" />
+    <ClInclude Include="acceptor.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="connector.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="link_common.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="linkclient.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="linkserver.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="linkfactory.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\linkargs.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="multiplexing_impl.h">
+      <Filter>multiplexing</Filter>
+    </ClInclude>
+    <ClInclude Include="multiplexing.h">
+      <Filter>multiplexing</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

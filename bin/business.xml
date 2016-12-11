@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<app name="business">
+    <plugins>
+		<plugin name="xmessage"/>
+		<plugin name="xlog"/>
+		<plugin name="xconnection"/>
+		<plugin name="xbusiness">
+			<args thread_num="2"/>
+			<components>
+				<component name="comp_test"/>
+			</components>
+		</plugin>
+		<plugin name="xpipe">
+			<pipes>
+				<pipe>xconnection;xroute</pipe>
+				<pipe>xbusiness;xroute</pipe>
+			</pipes>
+		</plugin>
+		<plugin name="xroute">
+			<routes>
+				<route function_id="*;" plugin="xbusiness"/>
+			</routes>
+		</plugin>
+	</plugins>
+</app>

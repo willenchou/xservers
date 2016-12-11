@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<tests>
+	<test function_id="1000000">
+		<input>
+			<col name="col1" type="" value="col1_value"/>
+		</input>
+	</test>
+</tests>

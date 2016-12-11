@@ -1,0 +1,6 @@
+#ifndef XSERVER_VERSION_H_
+#define XSERVER_VERSION_H_
+
+#define VERSION "V1.0.0.0"
+
+#endif //XSERVER_VERSION_H_

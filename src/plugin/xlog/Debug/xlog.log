@@ -1,0 +1,8 @@
+﻿生成启动时间为 2016/12/11 9:53:35。
+     1>项目“F:\willenchou\x\src\plugin\xlog\xlog.vcxproj”在节点 2 上(Clean 个目标)。
+       项目文件包含 ToolsVersion="12.0"。此工具集可能未知或缺失。在这种情况下，通过安装 MSBuild 的正确版本，或许可以解决此问题。否则，该 build 可能已因策略原因而被强制为某个特定 ToolsVersion。将该项目视为其已具有 ToolsVersion="4.0"。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=291333。
+     1>已完成生成项目“F:\willenchou\x\src\plugin\xlog\xlog.vcxproj”(Clean 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.10

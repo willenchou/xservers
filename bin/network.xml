@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<network>
+	<group system_no="0" sub_system_no="0">
+		<app name="bus" no="0" ip="127.0.0.1" port="18000"/>
+		<app name="access" no="0" ip="127.0.0.1" port="18001">
+			<parents>
+				<parent app_name="bus"/>
+			</parents>
+		</app>
+		<app name="business" no="0" ip="127.0.0.1" port="18002">
+			<parents>
+				<parent app_name="bus"/>
+			</parents>
+		</app>
+	</group>
+</network>

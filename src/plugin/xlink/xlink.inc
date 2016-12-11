@@ -1,0 +1,76 @@
+##########################################################################
+##  makefile.gcc 通用包含文件
+##  -------------------------------------------------
+##  
+##概    要: 
+##  Makefile for g++ 3.4.6~
+##  
+##  文件名: xlink.inc
+##  模块名: xlink.so
+##  模块说明: 
+##   
+##作    者: willen
+##创建时间: 2016-04-09
+##备    注: 
+##
+##修改记录: 
+##########################################################################
+
+#(1)目标文件
+
+OBJS= acceptor.$(TO) channel.$(TO) connection.$(TO) connector.$(TO) linkclient.$(TO)\
+		 linkfactory.$(TO) linkserver.$(TO) socket.$(TO)\
+		 event_dispatch.$(TO) eventthread.$(TO) eventthreadpool.$(TO)\
+		 message.$(TO) pack.$(TO)\
+		 epoll.$(TO) multiplexingfactory.$(TO)\
+
+#(2)编译依赖.cpp.o:,
+#先清除目标文件
+all : cleanobj  $(EXES)
+#
+acceptor.$(TO): acceptor.cpp
+	$(CC) $(CFLAGS) acceptor.cpp $(INCLUDE_DIR)
+channel.$(TO): channel.cpp
+	$(CC) $(CFLAGS) channel.cpp $(INCLUDE_DIR)
+connection.$(TO): connection.cpp
+	$(CC) $(CFLAGS) connection.cpp $(INCLUDE_DIR)
+connector.$(TO): connector.cpp
+	$(CC) $(CFLAGS) connector.cpp $(INCLUDE_DIR)
+linkclient.$(TO): linkclient.cpp
+	$(CC) $(CFLAGS) linkclient.cpp $(INCLUDE_DIR)
+linkfactory.$(TO): linkfactory.cpp
+	$(CC) $(CFLAGS) linkfactory.cpp $(INCLUDE_DIR)
+linkserver.$(TO): linkserver.cpp
+	$(CC) $(CFLAGS) linkserver.cpp $(INCLUDE_DIR)
+socket.$(TO): socket.cpp
+	$(CC) $(CFLAGS) socket.cpp $(INCLUDE_DIR)
+#
+event_dispatch.$(TO): event_dispatch.cpp
+	$(CC) $(CFLAGS) event_dispatch.cpp $(INCLUDE_DIR)
+eventthread.$(TO): eventthread.cpp
+	$(CC) $(CFLAGS) eventthread.cpp $(INCLUDE_DIR)
+eventthreadpool.$(TO): eventthreadpool.cpp
+	$(CC) $(CFLAGS) eventthreadpool.cpp $(INCLUDE_DIR)
+#
+message.$(TO): message.cpp
+	$(CC) $(CFLAGS) message.cpp $(INCLUDE_DIR)
+pack.$(TO): pack.cpp
+	$(CC) $(CFLAGS) pack.cpp $(INCLUDE_DIR)
+#
+epoll.$(TO): epoll.cpp
+	$(CC) $(CFLAGS) epoll.cpp $(INCLUDE_DIR)
+#kqueque.$(TO): kqueque.cpp
+#	$(CC) $(CFLAGS) kqueque.cpp $(INCLUDE_DIR)
+select.$(TO): select.cpp
+	$(CC) $(CFLAGS) select.cpp $(INCLUDE_DIR)
+multiplexingfactory.$(TO): multiplexingfactory.cpp
+	$(CC) $(CFLAGS) multiplexingfactory.cpp $(INCLUDE_DIR)
+	
+$(EXES): $(OBJS)
+	$(LD) $(LFLAGS) -o$(OUTPUT_DIR)/$(LIB_PRE)$(EXES)$(LIB_EXT) $(OBJS) $(STDLIBS) $(DEFLIBS) $(EXPS)
+
+#(3)清理命令
+cleanobj:
+	$(RM) *.$(TO)
+clean:cleanobj
+	@echo clean all

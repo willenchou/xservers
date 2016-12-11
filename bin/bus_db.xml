@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<app name="bus">
+    <plugins>
+		<plugin name="xmessage"/>
+		<plugin name="xlog"/>
+		<plugin name="xconnection"/>
+		<plugin name="xdb">
+			<args></args>
+			<dss>
+				<ds logic_name="xdbsvr" ds_type="mysql_x" init_conn_count="1" max_conn_count="2" wait_conn_time="3000" server="115.29.151.158" port="3306" user_name="oft" password="A123456a" database_context="oft"/>
+			</dss>
+			<libs>
+				<lib></lib>
+			</libs>
+		</plugin>
+		<plugin name="xroute">
+			<routes>
+				<route function_id="*;" node="business"/>
+			</routes>
+		</plugin>
+		<plugin name="xpipe">
+			<pipes>
+				<pipe>xconnection;xroute</pipe>
+			</pipes>
+		</plugin>
+	</plugins>
+</app>	

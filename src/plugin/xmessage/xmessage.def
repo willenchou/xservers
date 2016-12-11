@@ -1,0 +1,6 @@
+LIBRARY	"xmessage"
+EXPORTS
+    GetPluginInfo
+	GetServiceInfo
+	GetService
+	

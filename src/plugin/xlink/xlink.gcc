@@ -1,0 +1,72 @@
+##########################################################################
+##概    要:
+##  Makefile for g++ 3.4.6~
+##
+##  文件名: xlink.gcc
+##  模块名: xlink.so
+##  模块说明: 
+##   
+##作    者: willen
+##创建时间: 2016-04-09
+##备    注: 
+##
+##修改记录: 
+##########################################################################
+
+###-(1)变量定义-###
+
+#输出目标库名
+EXES= xlink
+
+#动态库引出函数定义(不需要)
+EXPS=
+
+#OBJ扩展名定义
+TO=o
+
+#目标库前后缀定义
+LIB_PRE=lib
+LIB_EXT=.so
+
+#源代码路径
+PROJECT_HOME=./
+XFRAME_HOME=../../
+XBASE_HOME=../../xbase/
+INCLUDE_HOME =../../include/
+
+#include路径
+INCLUDE_DIR	= -I. -I$(PROJECT_HOME) -I$(XFRAME_HOME) -I$(INCLUDE_HOME) -I$(XBASE_HOME)
+#dll输出路径
+OUTPUT_DIR=../../bin
+
+
+#自定义编译(不同平台对同一模块可能有不同编译选项):
+DEFS = -D_DEBUG -D__USE_XOPEN2K8 -D__USE_GNU -DOS_UNIX -D_GLIBCXX__PTHREADS
+
+#清除文件命令
+RM = rm -f
+
+
+###-(2)编译器参数设置-###
+CC = g++
+LD = $(CC)
+
+#-fPIC
+CFLAGS = -c -g -O2 -fPIC $(DEFS)
+LFLAGS = -shared
+
+
+#debug版本
+ifdef _DEBUG
+DEFS= $(DEFS) -D_DEBUG
+CFLAGS = -c -g -DNDEBUG -fPIC $(DEFS)
+EXES = $(EXES)_d
+endif
+
+###-(3)要连接的标准库和自定义库-###
+STDLIBS=
+LIBPATH=../../bin
+DEFLIBS= -L$(LIBPATH)-lxbase
+
+###-(4)包含通用编译项-###
+include xlink.inc
